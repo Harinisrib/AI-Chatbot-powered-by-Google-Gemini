@@ -37,11 +37,10 @@ st.markdown("""
 st.title("🤖 Gemini Chatbot")
 
 # Configure API
-try:
-    # Try to get from Streamlit secrets first (for cloud deployment)
-    API_KEY = st.secrets.get("GEMINI_API_KEY", os.getenv('GEMINI_API_KEY', 'AIzaSyCYBRWotxZxE1pQsKFHjUZ8fnhG34DI_oo'))
-except:
-    API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyCYBRWotxZxE1pQsKFHjUZ8fnhG34DI_oo')
+API_KEY = os.getenv('GEMINI_API_KEY', 'AIzaSyCYBRWotxZxE1pQsKFHjUZ8fnhG34DI_oo')
+if not API_KEY or API_KEY == '':
+    st.error("⚠️ GEMINI_API_KEY not found! Please set it in Render environment variables.")
+    st.stop()
 genai.configure(api_key=API_KEY)
 
 # Initialize session state
