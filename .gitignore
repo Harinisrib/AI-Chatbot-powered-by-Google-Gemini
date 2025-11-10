@@ -9,3 +9,6 @@ venv/
 .streamlit/secrets.toml
 *.log
 .DS_Store
+firebase-credentials.json
+reminders.db
+*.db

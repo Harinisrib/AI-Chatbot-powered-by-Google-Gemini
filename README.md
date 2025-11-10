@@ -1,6 +1,6 @@
-# Gemini Chatbot
+# 🤖 Gemini Chatbot Pro
 
-A simple chatbot using Google's Gemini API.
+A feature-rich AI chatbot powered by Google's Gemini API with advanced capabilities.
 
 ## Setup
 
@@ -16,18 +16,39 @@ pip install -r requirements.txt
 set GEMINI_API_KEY=your_api_key_here
 ```
 
+## ✨ Features
+
+- 📎 **File Upload**: Images, PDFs, Documents, Code files
+- ⏰ **Smart Reminders**: Natural language reminders with notifications
+- 💬 **Multiple Chat Sessions**: Organize conversations
+- 🎭 **AI Personalities**: 6 different assistant modes
+- 🌓 **Theme Toggle**: Dark/Light mode
+- 🔍 **Search**: Find messages in chat history
+- 📥 **Export**: Download chats as TXT
+- 🎤 **Voice Input**: Speak to the chatbot
+- 🚀 **Quick Actions**: One-click prompts
+- ⚡ **Streaming**: Fast, real-time responses
+- 💻 **Code Highlighting**: Beautiful code display
+- 📊 **Analytics**: Chat statistics
+
 ## Usage
 
-### Web UI (Streamlit - Recommended)
-Run the chatbot with a black theme UI:
+### Enhanced Version (All Features)
+```bash
+streamlit run enhanced_app.py
+```
+
+### With Reminders
+```bash
+streamlit run reminder_app.py
+```
+
+### Basic Version
 ```bash
 streamlit run app.py
 ```
 
 ### Command Line
-Run the basic chatbot:
 ```bash
 python chatbot.py
 ```
-
-Type your messages and press Enter. Type 'quit' or 'exit' to end the conversation.
